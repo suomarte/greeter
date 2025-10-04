@@ -46,23 +46,4 @@
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <configuration>
-          <image>
-            <env>
-              <BPL_TOTAL_MEMORY_AVAILABLE>512M</BPL_TOTAL_MEMORY_AVAILABLE>
-              <BPL_JAVA_THREAD_COUNT>50</BPL_JAVA_THREAD_COUNT>
-              <BPL_JAVA_TOOL_OPTIONS>-XX:MaxDirectMemorySize=5M -XX:MaxMetaspaceSize=64M -XX:ReservedCodeCacheSize=128M -Xss512k
-              </BPL_JAVA_TOOL_OPTIONS>
-            </env>
-          </image>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
 </project>
